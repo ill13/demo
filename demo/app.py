@@ -23,7 +23,7 @@ if DEBUG := True:
 @app.get("/")
 
 def index(request: Request):
-    return templates.TemplateResponse("index.html",context={"request":request,'title':'Demo'})
+    return templates.TemplateResponse("index.html",context={"request":request,'title':'Demo0'})
 
 # def index():
 #     return{"hello":"world"}
