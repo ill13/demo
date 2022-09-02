@@ -2,12 +2,19 @@ import os
 import arel
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 
 DEBUG=True
 stage = os.environ.get('STAGE','dev')
 
+
+
 app = FastAPI()
 templates = Jinja2Templates("templates") # folder where your templates are stored
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+#static = Jinja2Templates("static")
 
 #if _debug := os.getenv("DEBUG"):
 if DEBUG := True:

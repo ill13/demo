@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Drag PDFs</h3>
+        <p>Drag PDFs here to upload them to our secure server</p>
+  
+      </div>
+      <div class="col-sm-4">
+        <h3>Sort PDFs</h3>
+        <p>Drag your PDFs to sort them in the order you prefer</p>
+        <ul class="list-group">
+          <li class="list-group-item">First.PDF</li>
+          <li class="list-group-item">Second.PDF</li>
+          <li class="list-group-item">Third.PDF</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h3>Download Merged PDF</h3>
+  
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Download</button>
+      </div>
+    </div>
+  </div>
+  
