@@ -14,7 +14,6 @@ app = FastAPI()
 templates = Jinja2Templates("templates") # folder where your templates are stored
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-#static = Jinja2Templates("static")
 
 #if _debug := os.getenv("DEBUG"):
 if DEBUG := True:
