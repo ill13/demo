@@ -13,9 +13,8 @@
     {% include "components/navbar.html" %}
     {% include "components/centeredhero.html" %}
     {% include "components/columns.html" %}
-    {% block content %}
-    {% endblock
-    %}
+    {% include "components/footer.html" %}
+    {% block content %}{% endblock %}
     <!-- Hot reload script -->
     {% if DEBUG %}{{ hot_reload.script(url_for('hot-reload')) | safe }}{% endif %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

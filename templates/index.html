@@ -1,2 +1,12 @@
 {% extends "base.html" %}
-{% block content %}Hello, world!!{% endblock %}
+
+{% set nav %} <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a> {% endset %} 
+{% block content %}Hello, world!{% endblock %}
